@@ -1,0 +1,118 @@
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.linkA {
+		color: maroon;
+		position:relative;
+		text-decoration: none;
+	}
+	
+	.linkA::after {
+		opacity: 0.5;
+		content: "";
+		position:absolute;
+			right: 100%;
+			bottom: 0px;
+			left: 0;
+		border-bottom: 3px solid black;
+		text-decoration: default;
+		transition: right .4s cubic-bezier(0,.5,0,1);
+	}	
+
+	.linkA:hover::after {
+		right: 0;
+	}
+	
+	.video {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		background-color: #f2f1ed;
+	}
+	
+	.left {
+		float: left;
+	}
+	
+	.backLayer {
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;	
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+	
+	
+	.title {	
+		margin-left: 75px;
+	}
+	
+	.parallax {
+		min-height: 350px; 
+		left:0;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.fade-in {
+	   animation: fadeIn ease 3s;
+	  -webkit-animation: fadeIn ease 3s;
+	  -moz-animation: fadeIn ease 3s;
+	  -o-animation: fadeIn ease 3s;
+	  -ms-animation: fadeIn ease 3s;
+	}
+	
+	@keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-moz-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-webkit-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-o-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-ms-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	}

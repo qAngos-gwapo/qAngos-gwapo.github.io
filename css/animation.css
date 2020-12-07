@@ -1,0 +1,10 @@
+.sprite {
+	background: url('../images/elizabeth_sprite.png') no-repeat 0 -5px;
+	width: 52px;
+	height: 66px;
+	animation: elizabeth 1s steps(6) infinite;
+}
+@keyframes elizabeth {
+	from{background-position-x: 0px;}
+	to{background-position-x:-359px}
+}

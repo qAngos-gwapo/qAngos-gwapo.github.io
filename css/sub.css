@@ -1,0 +1,168 @@
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		background-color: #f2f1ed;
+	}
+	
+	nav {
+		text-align: center;
+	}
+	
+	a {
+		text-decoration:none;
+	}
+	
+	#111:hover {
+		color: #333333;
+		transition: 0.3s;
+	}
+	
+	#189:hover {
+		color: #333333;
+		transition: 0.3s;
+	}
+	
+	#204:hover {
+		color: #333333;
+		transition: 0.3s;
+	}
+	
+	#242:hover {
+		color: #333333;
+		transition: 0.3s;
+	}
+	
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.linkA {
+		color: maroon;
+		position:relative;
+		text-decoration: none;
+	}
+	
+	.linkA::after {
+		opacity: 0.5;
+		content: "";
+		position:absolute;
+			right: 100%;
+			bottom: 0px;
+			left: 0;
+		border-bottom: 3px solid black;
+		text-decoration: default;
+		transition: right .4s cubic-bezier(0,.5,0,1);
+	}	
+
+	.linkA:hover::after {
+		right: 0;
+	}
+	
+	.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
+	}
+	
+	.right {
+		display: block;
+		margin-left: auto;
+	}
+	
+	.backLayer {
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;	
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+	
+	
+	.title {	
+		margin-left: 75px;
+	}
+	
+	.parallax {
+		min-height: 250px; 
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#topLink {
+		color:#ff6b63;
+		position:relative;
+		text-decoration:none;
+	}
+	
+	#topLink::after {
+		opacity: 0.5;
+		content: "";
+		position:absolute;
+			right: 100%;
+			bottom: 0px;
+			left: 0;
+		border-bottom: 3px solid #ff6b63;
+		text-decoration: default;
+		transition: right .4s cubic-bezier(0,.5,0,1);
+	}	
+
+	#topLink:hover::after {
+		right: 0;
+	}
+	
+	.fade-in {
+	   animation: fadeIn ease 4s;
+	  -webkit-animation: fadeIn ease 4s;
+	  -moz-animation: fadeIn ease 4s;
+	  -o-animation: fadeIn ease 4s;
+	  -ms-animation: fadeIn ease 4s;
+
+	}
+	@keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-moz-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-webkit-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-o-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	  }
+	}
+
+	@-ms-keyframes fadeIn {
+	  0% {
+		opacity:0;
+	  }
+	  100% {
+		opacity:1;
+	}
